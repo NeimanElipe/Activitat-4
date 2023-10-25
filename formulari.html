@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="external.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulari Lliga</title>  
+</head>
+
+<body>
+    <h1> Formulari predictori de la Lliga 2023/24 </h1>
+    <form action="./formulari_enviat.html">  <!-- L'action el fem servir per rebre el formulari a una altre pàgina.-->
+
+        <div> <!-- Utilitzem els div per separar els inputs.-->
+        <p>Primer, explica'ns qui ets.</p>
+        <label- for="prim-nom">Nom i cognoms:</label> <!-- Fem el label per posar una etiqueta a qualsevol input. -->
+        <input type="text" id="prim-nom" name="prim-nom" required class="nomcg"> <!-- Afegim una entrada perque l'usuari hagi de introduir el que se li demana, en aquest cas, una caixa de text.--> 
+        </div>
+        <br>
+    
+        
+        <div> <!-- Utilitzem els div per separar els inputs.-->
+        <label for="mail-nom">Escriu el teu correu electrònic: </label>
+        <input type="email" id="mail-nom" name="mail-nom" required class="mail"> <!-- Posem una entrada per que l'usuari introdueixi el seu mail.-->
+        </div>
+        <br>
+
+        <div> <!-- Utilitzem els div per separar els inputs.-->
+        <label for="edat-nom">Indica cuants anys tens:</label>
+        <input type="number" id="edat-nom" name="edat-nom" required> <!-- Posem un altre input de tipus "number" perquè no deixi posar lletres.-->
+        </div>
+    
+        <div> <!-- Utilitzem els div per separar els inputs.-->
+        <p> Preguntes sobre l'esport. </p> <!-- Afegim un paràgraf per fer una breu introducció del que preguntem.-->
+        <label for="interes"> Com et va sorgir l'interés pel fútbol? </label>         
+        <select required> <!-- Utilitzem els required per obligar a l'usuari a respondre, sinó no podrà enviarmel formulari.--> <!-- Utilitzem el select perque es crei una caixa que et deixi seleccionar "options".-->
+            <option id="familia">Ve de familia.</option>
+            <option id="futbol">Simplement m'agrada l'esport.</option>
+            <option id="no-futbol">No m'agrada el fútbol.</option>
+        </select>
+        </div>
+
+        <div> <!-- Utilitzem els div per separar els inputs.-->
+        <p>Quina és l'altre lliga que més t'interessa?</p>
+        <input type="radio" id="lliga1" name="lliga" required checked> <!-- Creem un input que sigui un selector de una única opció.-->
+        <label for="lliga1"> Premier League </label>
+        <br>
+
+        <input type="radio" id="lliga2" name="lliga" required>
+        <label for="lliga2"> Bundesliga </label>
+        <br>
+
+        <input type="radio" id="lliga3" name="lliga" required>
+        <label for="lliga3"> Serie A </label>
+        <br>
+
+        <input type="radio" id="lligaX" name="lliga" required>
+        <label for="lligaX">Un altre</label>
+        <br>
+
+        <label for="lliga-other">Digues quina altre lliga t'interessa:</label> <!-- A més si la resposta és un altre donem l'opció amb un input de tipus text perquè l'usuari la posi.-->
+        <input type="text" id="lliga-other" name="lliga-other" > <!-- En aquest cas no es required ja que no tothom li interessa una de les lligues que hem posat a dalt.-->
+        <br>
+
+
+        </div>
+
+        <div>
+        <p>De quin equip ets, o simpatitzes?</p>
+        <input type="checkbox" id="equip1" name="equip1"  checked> <!--Li posem "checked" perque la pàgima ya deixi marcada una opció. --> <!-- Creem  un input que crei unes "checkbox" per seleccionar una o més opcions.-->
+        <label for="equip1">RCD Espanyol</label>
+        <br>
+        <input type="checkbox" id="equip2" name="equip2" >
+        <label for="equip2"> Real Madrid</label>
+        <br>
+        <input type="checkbox" id="equip3" name="equip3" >
+        <label for="equip3"> Girona </label>
+        <br>
+        <input type="checkbox" id="equip4" name="equip4" >
+        <label for="equip4"> Barcelona </label>
+        <br>
+        <input type="checkbox" id="equipX" name="equipX" >
+        <label for="equipX">Un altre</label>
+        <br>
+
+        <label for="equip-other">Digues quina altre equip t'interessa:</label> <!-- Al igual que l'anterior input, en aquest considerem que l'usuari pot tenir altres preferències i per tant creem una caixa de text perquè la posi.-->
+        <input type="text" id="equip-other" name="equip-other" >
+        <br>
+        </div>
+        
+        <p>Què és el que més t'agrada del fútbol?</p>
+        <textarea cols="70" rows="20" placeholder="Escriu el que penses..." required></textarea> <!-- Creem una caixa de text perquè expliquin el que es demana.-->
+        <br>
+        <input type="submit" value="Envia" id="button-envia" > <!-- Creem una caixa que sigui un botó per enviar el formulari, aquest s'enviarà si les preguntes que són obligatories estàn contestades.-->
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
