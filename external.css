@@ -1,0 +1,30 @@
+body { /* Aqui estem aplicant el tipus de font i el color del fons a tota l'etiqueta body */
+    background-color: beige;
+    font-style: italic;
+}
+
+.nomcg{ /* Al camp de nom i cognom estem aplicant l'amplada */
+    width: 300px;
+}
+
+.mail{/* Aqui apliquem l'amplada al cam del mail */
+    width: 300px;
+}
+
+#edat-nom{ /* El mateix pero al camp d'edat */
+    width: 100px;
+}
+
+#button-envia,button{ /* Aqui apliquem l'estil per defecte de les etiquetes button */
+    width: auto;
+    background-color:brown;
+}
+
+#button-envia:hover,button:hover{ /* Aqui apliquem estils per cuan el ratolí estigui a sobre dels butons */
+    background-color: yellow;
+
+}
+
+input:focus{ /* Aqui apliquem el color del fons de les caixes de text */
+    background-color: blueviolet;
+}
